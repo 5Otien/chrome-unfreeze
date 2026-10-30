@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chrome-unfreeze"
+version = "0.1.0"
+description = "Unfreeze a hung Chrome on Linux without losing your tabs."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+classifiers = ["Operating System :: POSIX :: Linux", "Environment :: Console"]
+
+[project.scripts]
+chrome-unfreeze = "chrome_unfreeze.cli:main"
+
+[tool.setuptools]
+packages = ["chrome_unfreeze"]
